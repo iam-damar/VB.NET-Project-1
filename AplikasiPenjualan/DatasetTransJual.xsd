@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DatasetTransJual" targetNamespace="http://tempuri.org/DatasetTransJual.xsd" xmlns:mstns="http://tempuri.org/DatasetTransJual.xsd" xmlns="http://tempuri.org/DatasetTransJual.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DatasetTransJual" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DatasetTransJual" msprop:Generator_UserDSName="DatasetTransJual">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Kode_x0020_Barang" msprop:Generator_ColumnVarNameInTable="columnKode_Barang" msprop:Generator_ColumnPropNameInRow="Kode_Barang" msprop:Generator_ColumnPropNameInTable="Kode_BarangColumn" msprop:Generator_UserColumnName="Kode Barang" type="xs:string" minOccurs="0" />
+              <xs:element name="Nama_x0020_Barang" msprop:Generator_ColumnVarNameInTable="columnNama_Barang" msprop:Generator_ColumnPropNameInRow="Nama_Barang" msprop:Generator_ColumnPropNameInTable="Nama_BarangColumn" msprop:Generator_UserColumnName="Nama Barang" type="xs:string" minOccurs="0" />
+              <xs:element name="Harga_x0020_Barang" msprop:Generator_ColumnVarNameInTable="columnHarga_Barang" msprop:Generator_ColumnPropNameInRow="Harga_Barang" msprop:Generator_ColumnPropNameInTable="Harga_BarangColumn" msprop:Generator_UserColumnName="Harga Barang" type="xs:string" minOccurs="0" />
+              <xs:element name="Jumlah" msprop:Generator_ColumnVarNameInTable="columnJumlah" msprop:Generator_ColumnPropNameInRow="Jumlah" msprop:Generator_ColumnPropNameInTable="JumlahColumn" msprop:Generator_UserColumnName="Jumlah" type="xs:string" minOccurs="0" />
+              <xs:element name="Subtotal" msprop:Generator_ColumnVarNameInTable="columnSubtotal" msprop:Generator_ColumnPropNameInRow="Subtotal" msprop:Generator_ColumnPropNameInTable="SubtotalColumn" msprop:Generator_UserColumnName="Subtotal" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

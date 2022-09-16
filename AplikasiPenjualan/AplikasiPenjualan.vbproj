@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6AB8E4DE-7C7E-406B-A89C-F11EDABA5A69}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AplikasiPenjualan.My.MyApplication</StartupObject>
+    <RootNamespace>AplikasiPenjualan</RootNamespace>
+    <AssemblyName>AplikasiPenjualan</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AplikasiPenjualan.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AplikasiPenjualan.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectDbModule.vb" />
+    <Compile Include="CrystalReportLapBarang.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportLapBarang.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportLapDataAdmin.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportLapDataAdmin.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportLapDataPelanggan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportLapDataPelanggan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportLaporanBulanan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportLaporanBulanan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportLaporanHarian.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportLaporanHarian.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportLaporanMingguan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportLaporanMingguan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportLapPerNota.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportLapPerNota.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportsTransJuals.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportsTransJuals.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DatasetTransJual.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatasetTransJual.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatasetTransJual.vb">
+      <DependentUpon>DatasetTransJual.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LapAdminViewer.Designer.vb">
+      <DependentUpon>LapAdminViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LapAdminViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LapBarangViewer.Designer.vb">
+      <DependentUpon>LapBarangViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LapBarangViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LapDataMaster.Designer.vb">
+      <DependentUpon>LapDataMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LapDataMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanBulananViewer.Designer.vb">
+      <DependentUpon>LaporanBulananViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanBulananViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanHarianViewer.Designer.vb">
+      <DependentUpon>LaporanHarianViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanHarianViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanMingguanViewer.Designer.vb">
+      <DependentUpon>LaporanMingguanViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanMingguanViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LaporanPenjualan.Designer.vb">
+      <DependentUpon>LaporanPenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LaporanPenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LapPelangganViewer.Designer.vb">
+      <DependentUpon>LapPelangganViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LapPelangganViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LapPerNotaViewer.Designer.vb">
+      <DependentUpon>LapPerNotaViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LapPerNotaViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.vb">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterAdmin.Designer.vb">
+      <DependentUpon>MasterAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterBarang.Designer.vb">
+      <DependentUpon>MasterBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterPelanggan.Designer.vb">
+      <DependentUpon>MasterPelanggan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPelanggan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PasswordChange.Designer.vb">
+      <DependentUpon>PasswordChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordChange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturTransaksiPenjualan.Designer.vb">
+      <DependentUpon>ReturTransaksiPenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturTransaksiPenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.vb">
+      <DependentUpon>SignUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransaksiPenjualan.Designer.vb">
+      <DependentUpon>TransaksiPenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransaksiPenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransJualViewer.Designer.vb">
+      <DependentUpon>TransJualViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransJualViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CrystalReportLapBarang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportLapBarang.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportLapDataAdmin.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportLapDataAdmin.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportLapDataPelanggan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportLapDataPelanggan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportLaporanBulanan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportLaporanBulanan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportLaporanHarian.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportLaporanHarian.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportLaporanMingguan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportLaporanMingguan.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportLapPerNota.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportLapPerNota.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportsTransJuals.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportsTransJuals.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LapAdminViewer.resx">
+      <DependentUpon>LapAdminViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LapBarangViewer.resx">
+      <DependentUpon>LapBarangViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LapDataMaster.resx">
+      <DependentUpon>LapDataMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanBulananViewer.resx">
+      <DependentUpon>LaporanBulananViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanHarianViewer.resx">
+      <DependentUpon>LaporanHarianViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanMingguanViewer.resx">
+      <DependentUpon>LaporanMingguanViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LaporanPenjualan.resx">
+      <DependentUpon>LaporanPenjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LapPelangganViewer.resx">
+      <DependentUpon>LapPelangganViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LapPerNotaViewer.resx">
+      <DependentUpon>LapPerNotaViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterAdmin.resx">
+      <DependentUpon>MasterAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterBarang.resx">
+      <DependentUpon>MasterBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterPelanggan.resx">
+      <DependentUpon>MasterPelanggan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordChange.resx">
+      <DependentUpon>PasswordChange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturTransaksiPenjualan.resx">
+      <DependentUpon>ReturTransaksiPenjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransaksiPenjualan.resx">
+      <DependentUpon>TransaksiPenjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransJualViewer.resx">
+      <DependentUpon>TransJualViewer.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DatasetTransJual.xsc">
+      <DependentUpon>DatasetTransJual.xsd</DependentUpon>
+    </None>
+    <None Include="DatasetTransJual.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatasetTransJual.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DatasetTransJual.xss">
+      <DependentUpon>DatasetTransJual.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.CachedFilenameReportSource.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.CachedObjectReportSource.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.CachedReport.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.CachedReportConstants.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.EromReportSource.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.ICachedReport.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.IReportSourceFactory.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.LocalReportSourceBase.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.NonHTTPCachedReportSource.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.ParameterConverter+Separators.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.ParameterConverter.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.ProxyReportSource.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.RemoteReportSource.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.ReportSourceConverter.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.ReportSourceEditor.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.ReportSourceFactory.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.ReportSourceFactoryBase.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.ReportSourceTreeView.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.ReportSourceTreeViewNode.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.SimpleReportSourceEditor.datasource" />
+    <None Include="My Project\DataSources\CrystalDecisions.ReportSource.StringObjectConverterHelper.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
