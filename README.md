@@ -1,4 +1,4 @@
-# VB.NET-Project
+# VB.NET-Project-1
 
 ## Aplikasi Penjualan (Kasir)
 
