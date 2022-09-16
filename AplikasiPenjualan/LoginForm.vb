@@ -66,6 +66,9 @@ Public Class LoginForm
     End Sub
 
     Private Sub BtnSignUp_Click(sender As Object, e As EventArgs) Handles BtnSignUp.Click
+
+        ' Menampilkan SignUp Form untuk pendaftaran akun admin kasir.
+
         Me.Dispose()
 
         Dim SignUps As New SignUp
