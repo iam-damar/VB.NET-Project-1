@@ -4,7 +4,7 @@
 
 ### Komponen dalam pembuatan aplikasi
 
-Berikut komponen yang dibutuhkan dalam membuat LAN dan konfigurasinya didalam Packet Tracer
+Berikut komponen yang ada :
 
 - **Tipe Aplikasi** : Desktop Apps
 - **Bahasa Pemrograman** : VB
